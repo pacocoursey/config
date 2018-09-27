@@ -1,20 +1,50 @@
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# open
+alias o='open .'
+
+# list
+alias l='ls -lLahp'
+
+# editors
+alias a='atom .'
+
+#clipboard
+alias copy='pbcopy'
+alias paste='pbpaste'
+
+# change bash profile
+alias chbp='atom ~/.bash_profile'
+
+# eslint
+alias lint='eslint --ignore-path .gitignore .'
+
+#
+# Functions
+#
+
+# Go to a <repo> in ~/dev
+dev() {
+  cd "$HOME/dev/$1"
+}
+
+# Go to a <repo> in ~/fork
+fork() {
+  cd "$HOME/fork/$1"
+}
+
+#
+# Styling
+#
+
+# ps1 and terminal colors
 export PS1="▲   "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-alias l='ls -lLahp'
-alias c='open . -a Atom'
-alias chbp='open -a Atom ~/.bash_profile'
-alias lint='eslint --ignore-path .gitignore .'
-alias fix='eslint --ignore-path .gitignore --fix .'
-
-alias web='cd ~/Documents/web'
-alias gogit='cd ~/Documents/git/'
-alias gogitf='cd ~/Documents/gitf'
-alias gogita='cd ~/Documents/gita/'
-
-export PATH="/usr/local/mysql/bin:$PATH"
-
+# Show the cwd in the tab title bar
 case "$TERM" in
 xterm*|rxvt*)
     PROMPT_COMMAND='echo -ne "\033]0;⬡ ${PWD##*/}\007"'

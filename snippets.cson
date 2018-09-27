@@ -1,0 +1,113 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:o
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.js':
+  'console log':
+    'prefix': 'log'
+    'body': 'console.log(\'$1\');$2'
+  'import react':
+    'prefix': 'react'
+    'body': """
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+class $1 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+
+  render() {
+    return (
+      $2
+    );
+  }
+}
+
+$1.propTypes = {
+  $3
+};
+
+export default $1;
+
+    """
+  'react styled jsx':
+      'prefix': 'style'
+      'body': """
+<style jsx>
+  {`
+    $1
+  `}
+</style>
+      """
+
+'.text.html.basic':
+  'Blank HTML File':
+    'prefix': 'html'
+    'body': """
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
+    """
+
+'.source.css, .source.js':
+  'macOS Font':
+    'prefix': 'font'
+    'body': 'font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;'
+  'centered flex row':
+    'prefix': 'row'
+    'body': 'display: flex;\nflex-direction: row;\njustify-content: center;\nalign-items: center;'
+  'centered flex column':
+    'prefix': 'column'
+    'body': 'display: flex;\nflex-direction: column;\njustify-content: center;\nalign-items: center;'
+  'css reset':
+    'prefix': 'reset'
+    'body': """
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+    """

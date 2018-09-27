@@ -11,7 +11,7 @@ module.exports = {
     backgroundColor: '#1e1e1e',
     selectionColor: 'rgba(255, 255, 255, 0.2)',
     borderColor: '#1e1e1e',
-    css: 'span.tab_process.process_shell { font-family: "Consolas"; }',
+    css: 'span.tab_process.process_shell { font-family: "SF Mono"; }',
     termCSS: '',
     showHamburgerMenu: '',
     showWindowControls: '',
@@ -54,10 +54,12 @@ module.exports = {
     hyperTabs: {
       tabIcons: false,
       activityColor: 'salmon',
-    }
+    },
+
+    workingDirectory: "~/dev/"
   },
 
-  plugins: ["hyperterm-summon", "hyper-tabs-enhanced"],
+  plugins: ["hyper-tabs-enhanced", "hyperterm-working-directory"],
 
   localPlugins: [],
 

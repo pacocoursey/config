@@ -11,6 +11,9 @@ alias l='ls -lLahp'
 # editors
 alias a='atom .'
 
+# browser
+alias c='open -a "Google Chrome"'
+
 #clipboard
 alias copy='pbcopy'
 alias paste='pbpaste'

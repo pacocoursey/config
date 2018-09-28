@@ -24,6 +24,9 @@ alias chbp='atom ~/.bash_profile'
 # eslint
 alias lint='eslint --ignore-path .gitignore .'
 
+# ssh into school server
+alias s='ssh pcoursey@lovecraft.cs.nmt.edu'
+
 #
 # Functions
 #

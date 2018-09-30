@@ -20,6 +20,11 @@
 # Atom Flight Manual:o
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
+'.source.java':
+  'System out print line':
+    'prefix': 'print'
+    'body': 'System.out.println("$1");'
+
 '.source.js':
   'console log':
     'prefix': 'log'

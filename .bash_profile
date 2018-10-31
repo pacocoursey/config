@@ -19,7 +19,7 @@ alias copy='pbcopy'
 alias paste='pbpaste'
 
 # change bash profile
-alias chbp='atom ~/.bash_profile'
+alias chbp='atom ~/dev/dotfiles/.bash_profile'
 
 # eslint
 alias lint='eslint --ignore-path .gitignore .'
@@ -29,6 +29,9 @@ alias s='ssh pcoursey@lovecraft.cs.nmt.edu'
 
 # delete a remote branch
 alias drbranch='git push origin --delete'
+
+# alias homebrew python
+alias python='python3'
 
 #
 # Functions

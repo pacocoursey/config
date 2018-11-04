@@ -47,6 +47,11 @@ fork() {
   cd "$HOME/fork/$1"
 }
 
+# Upload a file to 0x0.st
+0x0() {
+  curl -F "file=@$1" https://0x0.st
+}
+
 # Print the terminal colors
 colors() {
   T='Xi'

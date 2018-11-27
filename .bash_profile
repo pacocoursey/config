@@ -52,6 +52,12 @@ fork() {
   curl -F "file=@$1" https://0x0.st
 }
 
+# Add a blank tile to the dock
+tile() {
+  defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+  killall Dock
+}
+
 # Print the terminal colors
 colors() {
   T='Xi'

@@ -56,10 +56,22 @@ module.exports = {
       activityColor: 'salmon',
     },
 
+    paneNavigation: {
+      showIndicators: false,
+      hotkeys: {
+        navigation: {
+          up: 'cmd+up',
+          down: 'cmd+down',
+          right: 'cmd+right',
+          left: 'cmd+left'
+        }
+      }
+    },
+
     workingDirectory: "~/dev/"
   },
 
-  plugins: ["hyper-tabs-enhanced", "hyperterm-working-directory"],
+  plugins: ["hyper-tabs-enhanced", "hyperterm-working-directory", "hyper-pane"],
 
   localPlugins: [],
 

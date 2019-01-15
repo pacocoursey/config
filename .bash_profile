@@ -33,6 +33,9 @@ alias drbranch='git push origin --delete'
 # alias homebrew python
 alias python='python3'
 
+# add mysql to path
+export PATH="/usr/local/mysql/bin:$PATH"
+
 #
 # Functions
 #

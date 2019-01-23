@@ -1,0 +1,7 @@
+{
+    "editor.cursorSmoothCaretAnimation": true,
+    "workbench.colorTheme": "Material Theme Darker",
+    "editor.fontFamily": "SF Mono, Consolas, Menlo, Monaco, 'Courier New', monospace",
+    "editor.insertSpaces": false,
+    "workbench.iconTheme": "eq-material-theme-icons-darker"
+}

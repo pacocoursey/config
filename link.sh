@@ -17,3 +17,7 @@ ln -s ~/dev/dotfiles/.eslintrc ~/.eslintrc
 # Link stylelint config
 rm ~/.stylelintrc
 ln -s ~/dev/dotfiles/.stylelintrc ~/.stylelintrc
+
+# Link vscode config
+rm ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/dev/dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json

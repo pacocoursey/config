@@ -1,7 +1,24 @@
 {
-    "editor.cursorSmoothCaretAnimation": true,
-    "workbench.colorTheme": "Material Theme Darker",
     "editor.fontFamily": "SF Mono, Consolas, Menlo, Monaco, 'Courier New', monospace",
-    "editor.insertSpaces": false,
-    "workbench.iconTheme": "eq-material-theme-icons-darker"
+    "materialTheme.autoApplyIcons": true,
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.fontSize": 16,
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.startupEditor": "none",
+    "workbench.fontAliasing": "antialiased",
+    "editor.wordWrap": "on",
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
+    "workbench.sideBar.location": "left",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.tabSize": 2,
+    "emmet.showAbbreviationSuggestions": false,
+    "editor.snippetSuggestions": "top",
+    "workbench.colorTheme": "Material Theme Darker High Contrast"
 }

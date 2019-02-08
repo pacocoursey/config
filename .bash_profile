@@ -19,7 +19,7 @@ alias copy='pbcopy'
 alias paste='pbpaste'
 
 # change bash profile
-alias chbp='atom ~/dev/dotfiles/.bash_profile'
+alias chbp='code ~/dev/dotfiles/.bash_profile'
 
 # eslint
 alias lint='eslint --ignore-path .gitignore .'

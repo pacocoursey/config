@@ -20,5 +20,7 @@
     "editor.tabSize": 2,
     "emmet.showAbbreviationSuggestions": false,
     "editor.snippetSuggestions": "top",
-    "workbench.colorTheme": "Material Theme Darker High Contrast"
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "editor.formatOnPaste": true,
+    "explorer.confirmDragAndDrop": false
 }

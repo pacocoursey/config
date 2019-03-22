@@ -9,10 +9,10 @@ alias o='open .'
 alias l='ls -lLahp'
 
 # editors
-alias a='atom .'
+alias c='code .'
 
 # browser
-alias c='open -a "Google Chrome"'
+alias b='open -a "Google Chrome"'
 
 #clipboard
 alias copy='pbcopy'

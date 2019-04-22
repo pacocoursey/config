@@ -9,6 +9,10 @@
         "aspects": [ "invalidHref", "preferButton" ]
       }],
       "react/prop-types": 0
+    },
+    "env": {
+      "node": true,
+      "es6": true,
+      "browser": true
     }
 }
-

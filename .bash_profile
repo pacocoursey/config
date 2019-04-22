@@ -14,7 +14,7 @@ alias c='code .'
 # browser
 alias b='open -a "Google Chrome"'
 
-#clipboard
+# clipboard
 alias copy='pbcopy'
 alias paste='pbpaste'
 
@@ -35,6 +35,16 @@ alias python='python3'
 
 # add mysql to path
 export PATH="/usr/local/mysql/bin:$PATH"
+
+# git aliases
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias go='git checkout'
+alias gp='git pull'
+alias gu='git push'
+alias gb='git branch'
+alias gm='git merge'
 
 #
 # Functions

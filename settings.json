@@ -6,6 +6,7 @@
     "breadcrumbs.enabled": false,
     "editor.fontSize": 16,
     "files.exclude": {
+        "**/__pycache__": true,
         "**/node_modules": true
     },
     "files.insertFinalNewline": true,
@@ -14,13 +15,17 @@
     "workbench.fontAliasing": "antialiased",
     "editor.wordWrap": "on",
     "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": false,
     "workbench.sideBar.location": "left",
     "editor.cursorSmoothCaretAnimation": true,
     "editor.tabSize": 2,
     "emmet.showAbbreviationSuggestions": false,
     "editor.snippetSuggestions": "top",
     "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "editor.formatOnPaste": true,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 0,
+    "eslint.packageManager": "yarn",
+    "editor.autoIndent": false,
+    "editor.renderIndentGuides": false,
+    "eslint.nodePath": "~/.config/yarn/global/node_modules",
+    "C_Cpp.updateChannel": "Insiders"
 }

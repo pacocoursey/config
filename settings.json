@@ -4,7 +4,7 @@
     "workbench.iconTheme": "eq-material-theme-icons-darker",
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "files.exclude": {
         "**/__pycache__": true,
         "**/node_modules": true

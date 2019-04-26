@@ -1,0 +1,84 @@
+{
+	"Div": {
+		"scope": "html",
+		"prefix": "div",
+		"body": [
+			"<div class=\"$1\">",
+			"  $2",
+			"</div>$3"
+		]
+	},
+	"Starter HTML": {
+		"scope": "html",
+		"prefix": "html",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"  <head>",
+			"    <meta charset=\"utf-8\">",
+			"    <title>$1</title>",
+			"",
+			"    <!-- Stylesheets -->",
+			"    <link rel=\"stylesheet\" href=\"./style.css\">",
+			"  </head>",
+			"  <body>",
+			"",
+			"  <!-- Scripts -->",
+			"  <script type=\"text/javascript\" src=\"./main.js\"></script>",
+			"  </body>",
+			"</html>"
+		]
+	},
+	"Reset CSS": {
+		"scope": "css",
+		"prefix": "reset",
+		"body": [
+			"* {",
+			"  box-sizing: border-box",
+			"}",
+			"",
+			"html,",
+			"body {",
+			"  padding: 0;",
+			"  margin: 0;",
+			"}",
+			"",
+			"body {",
+			"  min-height: 100vh;",
+			"}"
+		]
+	},
+	"console.log": {
+		"scope": "javascript",
+		"prefix": "log",
+		"body": [
+			"console.log('$1');"
+		]
+	},
+	"Centered Flex Row": {
+		"scope": "css",
+		"prefix": "row",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;"
+		]
+	},
+	"Centered Flex Column": {
+		"scope": "css",
+		"prefix": "column",
+		"body": [
+			"display: flex;",
+			"flex-direction: column;",
+			"justify-content: center;",
+			"align-items: center;"
+		]
+	},
+	"System Fonts": {
+		"scope": "css",
+		"prefix": "font",
+		"body": [
+			"font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;"
+		]
+	}
+}

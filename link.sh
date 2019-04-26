@@ -21,3 +21,10 @@ ln -s ~/dev/dotfiles/.stylelintrc ~/.stylelintrc
 # Link vscode config
 rm ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/dev/dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json
+
+rm ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/dev/dotfiles/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+
+rm ~/Library/Application\ Support/Code/User/snippets/global.code-snippets
+ln -s ~/dev/dotfiles/global.code-snippets ~/Library/Application\ Support/Code/User/snippets/global.code-snippets
+

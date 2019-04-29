@@ -45,6 +45,7 @@ alias gp='git pull'
 alias gu='git push'
 alias gb='git branch'
 alias gm='git merge'
+alias gl='git log'
 
 #
 # Functions

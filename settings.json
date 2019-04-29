@@ -27,5 +27,6 @@
     "editor.autoIndent": false,
     "editor.renderIndentGuides": false,
     "eslint.nodePath": "~/.config/yarn/global/node_modules",
-    "C_Cpp.updateChannel": "Insiders"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.editor.enablePreview": false
 }

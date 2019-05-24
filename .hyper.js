@@ -5,7 +5,7 @@ module.exports = {
     fontSize: 14,
     fontFamily: '"Consolas", "Range Mono"',
     cursorColor: '#fff',
-    cursorShape: 'BEAM',
+    cursorShape: 'BLOCK',
     cursorBlink: false,
     foregroundColor: '#fff',
     backgroundColor: '#1e1e1e',

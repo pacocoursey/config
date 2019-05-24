@@ -90,14 +90,22 @@ colors() {
   echo
 }
 
+# Get the current git branch
+pgb() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
+}
+
 #
 # Styling
 #
 
 # ps1 and terminal colors
-export PS1="▲   "
+reset='\[\e[0m\]'
+cyanbold='\[\e[1;36m\]'
+export PS1="▲  $cyanbold\$(pgb)/$reset "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+export LANG=en_US.UTF-8
 
 # Show the cwd in the tab title bar
 case "$TERM" in

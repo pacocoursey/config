@@ -46,10 +46,19 @@ alias gu='git push'
 alias gb='git branch'
 alias gm='git merge'
 alias gl='git log'
+alias gr='git pull --rebase'
+alias gd='git branch -d'
+alias grs='git remote set-url origin'
 
 #
 # Functions
 #
+
+# Make a folder and navigate to it
+md() {
+  mkdir -p -- "$1"
+  cd -P -- "$1"
+}
 
 # Go to a <repo> in ~/dev
 dev() {
@@ -70,6 +79,69 @@ fork() {
 tile() {
   defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
   killall Dock
+}
+
+# Convert .png to .icns
+ptoi() {
+  sips -s format icns $1 --out $1.icns
+}
+
+mknext() {
+  yarn init -y
+  yarn add next@latest react@latest react-dom@latest
+  mkdir pages
+  touch pages/index.js
+  echo "import React from 'react';
+
+const Index = () => (
+  <div>
+    <h1>Hello!</h1>
+  </div>
+);
+
+export default Index;" >> pages/index.js
+  yarn next
+}
+
+mkstatic() {
+  name=${PWD##*/}
+  touch index.html
+  touch style.css
+  touch main.js
+  touch now.json
+  echo "{
+    \"version\": 2,
+    \"name\": \"$name\",
+    \"alias\": \"$name.now.sh\"
+  }" >> now.json
+  echo "<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>" >> index.html
+  echo "* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}" >> style.css
 }
 
 # Print the terminal colors
@@ -101,8 +173,9 @@ pgb() {
 
 # ps1 and terminal colors
 reset='\[\e[0m\]'
-cyanbold='\[\e[1;36m\]'
-export PS1="▲  $cyanbold\$(pgb)/$reset "
+cyan='\[\e[1;36m\]'
+blue='\[\e[0;36m\]'
+export PS1="▲ $blue \W /$reset$cyan\$(pgb) / $reset"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export LANG=en_US.UTF-8

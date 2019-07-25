@@ -1,9 +1,7 @@
 {
     "editor.fontFamily": "SF Mono, Consolas, Menlo, Monaco, 'Courier New', monospace",
     "materialTheme.autoApplyIcons": true,
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "editor.fontSize": 14,
     "files.exclude": {
         "**/__pycache__": true,
@@ -20,13 +18,21 @@
     "editor.tabSize": 2,
     "emmet.showAbbreviationSuggestions": false,
     "editor.snippetSuggestions": "top",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "workbench.colorTheme": "Atom One Dark",
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
     "eslint.packageManager": "yarn",
-    "editor.autoIndent": false,
     "editor.renderIndentGuides": false,
     "eslint.nodePath": "~/.config/yarn/global/node_modules",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.smoothScrolling": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.autoIndent": false,
+    "search.usePCRE2": true
 }
